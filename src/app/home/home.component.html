@@ -1,0 +1,81 @@
+<div class="intro">
+  <h1>Márcio Porto</h1>
+  <p>
+    Hello, world! My name is <b>Márcio Porto</b>, a Software Developer and AI aficcionado. 
+  </p>
+</div>
+
+<h3>Background</h3>
+<hr>
+<p>
+  I graduated from <a href="https://www.macalester.edu/" target="_blank">Macalester College</a> on May 2017 with a B.A. in Computer Science and a minor in Data Science.
+  Since then, I have been following my interest in Artificial Intelligence by taking two Udacity nanodegrees: Deep Learning Foundations and Machine Learning Engineer (in progress). 
+</p>
+
+<h3>Work Experience</h3>
+<hr>
+<div class="row">
+  <div class="col-sm-3 col-xs-12">
+    <h4>Orderly Health</h4>
+    <h5>Software Developer</h5>
+    <p>Denver, CO</p>
+  </div>
+  <div class="col-sm-9 col-xs-12">
+    <ul>
+      <li>Helped build multiple use cases for our bot, including medication cost lookup, information about conditions and symptoms, and cost of services lookup.</li>
+      <li>Built a Slack bot using the Botkit library.</li>
+      <li>Implemented a payment system using the Stripe API.</li>
+      <li>Led major UI/UX redesign.</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3 col-xs-12">
+    <h4>MANGO Connects</h4>
+    <h5>Web Developer Intern</h5>
+    <p>Minneapolis, MN</p>
+  </div>
+  <div class="col-sm-9 col-xs-12">
+    <ul>
+      <li>Built the Ruby on Rails back-end and the front-end for the MANGO website from scratch, taking the product from zero to beta on my own in just four months.</li>
+      <li>Was MANGO's main developer for almost all of my time there.</li>
+      <li>Created a dashboard where users can manage the contacts in their network.</li>
+      <li>Built a message builder that coaches users step-by-step on how to write great networking messages.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Projects</h3>
+<hr>
+<div class="row">
+  <div class="project col-md-4 col-sm-6 col-xs-12" *ngFor="let project of visibleProjects">
+    <a routerLink="project/{{ project.id }}">{{ project.name }}</a>
+    <p>{{ project.description }}</p>
+    <div class="tags">
+      <span *ngFor="let tag of project.tags">
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<h3>Courses</h3>
+<hr>
+<div class="row">
+  <div class="project col-md-4 col-sm-6 col-xs-12" *ngFor="let course of visibleCourses">
+    {{ course.name }}
+    <p>{{ course.description }}</p>
+    <div class="tags">
+      <span *ngFor="let tag of course.tags">
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<h3>Testimonials</h3>
+<hr>
+<div class="testimonial">
+  <h4>Marcio wrote the first line of code, through the 3rd product release. So much of MANGO was built through Marcio's work and creativity. It is because of him that MANGO even exists.</h4>
+  <h5>Sue Wollan Fan</h5>
+</div>

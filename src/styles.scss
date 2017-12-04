@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary-color: #242c53;
+$secondary-color: #d67c7c;
+$tertiary-color: white;
+
+body {
+  font-family: "Oxygen", serif;
+  background: $primary-color;
+  color: $tertiary-color;
+}
+
+h1, h3 {
+  font-weight: bolder;
+  text-align: center;
+  color: $secondary-color;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: $tertiary-color;
+  border-radius: 0;
+
+  .navbar-nav {
+    margin-top: 12px;
+
+    .nav-item {
+      margin-right: 20px;
+    }
+  }
+}
+
+.project, .course {
+  border: 3px solid $tertiary-color;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+a, a:active {
+  color: $secondary-color;
+
+  &:hover {
+    text-decoration: none;
+    font-weight: bold;    
+    color: $tertiary-color;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  a {
+    margin: 0 15px;
+  }
+}
