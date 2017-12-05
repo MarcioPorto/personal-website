@@ -36,12 +36,14 @@ p {
 .navbar {
   background-color: $tertiary-color;
   border-radius: 0;
+  width: 100%;
 
   .navbar-nav {
     margin-top: 12px;
 
     .nav-item {
       margin-right: 20px;
+      display: inline-block;
     }
   }
 }
