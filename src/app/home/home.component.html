@@ -9,7 +9,7 @@
 <hr>
 <p>
   I graduated from <a href="https://www.macalester.edu/" target="_blank">Macalester College</a> on May 2017 with a B.A. in Computer Science and a minor in Data Science.
-  Since then, I have been following my interest in Artificial Intelligence by taking two Udacity nanodegrees: Deep Learning Foundations and Machine Learning Engineer (in progress). 
+  Since then, I have been following my interest in Artificial Intelligence by taking two Udacity nanodegrees: Deep Learning Foundations and Machine Learning Engineer (in progress). I am also very interested in cryptocurrencies, and truly believe in their potential to change the way that we do almost everything.
 </p>
 
 <h3>Work Experience</h3>
@@ -22,10 +22,11 @@
   </div>
   <div class="col-sm-9 col-xs-12">
     <ul>
-      <li>Helped build multiple use cases for our bot, including medication cost lookup, information about conditions and symptoms, and cost of services lookup.</li>
-      <li>Built a Slack bot using the Botkit library.</li>
-      <li>Implemented a payment system using the Stripe API.</li>
-      <li>Led major UI/UX redesign.</li>
+      <li>Built multiple features including the ability to ask clinical questions, as well as to search for services, providers, and medication costs.</li>
+      <li>Implemented subscription functionality and payments using Stripe.</li>
+      <li>Led major UI/UX redesign of the website and SMS experience.</li>
+      <li>Led efforts to drastically increase test coverage of the codebase.</li>
+      <li>Used Botkit to build a version of our bot for use within Slack.</li>
     </ul>
   </div>
 </div>
@@ -37,10 +38,10 @@
   </div>
   <div class="col-sm-9 col-xs-12">
     <ul>
-      <li>Built the Ruby on Rails back-end and the front-end for the MANGO website from scratch, taking the product from zero to beta on my own in just four months.</li>
-      <li>Was MANGO's main developer for almost all of my time there.</li>
-      <li>Created a dashboard where users can manage the contacts in their network.</li>
-      <li>Built a message builder that coaches users step-by-step on how to write great networking messages.</li>
+      <li>Took the product from zero to beta on my own in just four months.</li>
+      <li>Built the Ruby on Rails back-end and the front-end for the MANGO website from scratch.</li>
+      <li>Created a dashboard where users can easily manage the contacts in their network.</li>
+      <li>Implemented a message builder that coaches users step-by-step on how to write great networking messages.</li>
     </ul>
   </div>
 </div>
@@ -52,10 +53,23 @@
     <a routerLink="project/{{ project.id }}">{{ project.name }}</a>
     <p>{{ project.description }}</p>
     <div class="tags">
-      <span *ngFor="let tag of project.tags">
+      <span class="tag" *ngFor="let tag of project.tags">
         {{ tag }}
       </span>
     </div>
+  </div>
+  <div class="col-xs-12 text-center">
+    <a class="btn">See all projects</a>
+  </div>
+</div>
+
+<h3>Education</h3>
+<hr>
+<div class="row">
+  <div class="education col-xs-12">
+    <h4>Macalester College</h4>
+    <h5>B.A. in Computer Science</h5>
+    <p>Graduated with a major in Computer Science (emphasis in Artificial Intelligence) and a minor in Data Science (emphasis in GIS).</p>
   </div>
 </div>
 
@@ -63,19 +77,40 @@
 <hr>
 <div class="row">
   <div class="project col-md-4 col-sm-6 col-xs-12" *ngFor="let course of visibleCourses">
-    {{ course.name }}
+    <h4>{{ course.name }}</h4>
     <p>{{ course.description }}</p>
     <div class="tags">
-      <span *ngFor="let tag of course.tags">
+      <span class="tag" *ngFor="let tag of course.tags">
         {{ tag }}
       </span>
     </div>
   </div>
 </div>
 
-<h3>Testimonials</h3>
+<h3>Skills</h3>
+<hr>
+<div class="skills">
+  <span class="skill">Python</span>
+  <span class="skill">TensorFlow</span>
+  <span class="skill">Keras</span>
+  <span class="skill">scikit-learn</span>
+  <span class="skill">Pandas</span>
+  <span class="skill">IBM Watson</span>
+  <span class="skill">Hadoop</span>
+  <span class="skill">Spark</span>
+  <span class="skill">Django</span>
+  <span class="skill">Ruby on Rails</span>
+  <span class="skill">JavaScript</span>
+  <span class="skill">jQuery</span>
+  <span class="skill">AngularJS</span>
+  <span class="skill">React</span>
+  <span class="skill">Java</span>
+  <span class="skill">Android Development</span>
+</div>
+
+<!-- <h3>Testimonials</h3>
 <hr>
 <div class="testimonial">
-  <h4>Marcio wrote the first line of code, through the 3rd product release. So much of MANGO was built through Marcio's work and creativity. It is because of him that MANGO even exists.</h4>
-  <h5>Sue Wollan Fan</h5>
-</div>
+  <h4>"Marcio wrote the first line of code, through the 3rd product release. So much of MANGO was built through Marcio's work and creativity. It is because of him that MANGO even exists."</h4>
+  <h5>Sue Wollan Fan, CEO of MANGO Connects</h5>
+</div> -->

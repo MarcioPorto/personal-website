@@ -18,6 +18,19 @@ h1, h3 {
 
 h3 {
   text-transform: uppercase;
+  margin-top: 25px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h5 {
+  font-style: italic;
+}
+
+p {
+  font-size: 15px;
 }
 
 .navbar {
@@ -33,12 +46,18 @@ h3 {
   }
 }
 
-.project, .course {
+.project, .course, .education {
   border: 3px solid $tertiary-color;
   border-radius: 10px;
   padding: 15px;
   margin: 10px;
   width: calc(100% - 20px);
+
+  a, h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: $secondary-color;
+  }
 }
 
 .intro {
@@ -63,5 +82,43 @@ a, a:active {
 
   a {
     margin: 0 15px;
+  }
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag, .skill {
+  border: 1px solid $tertiary-color;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.tag {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.skill {
+  border-width: 2px;
+  padding: 10px 20px;
+  margin-bottom: 7px;
+}
+
+.btn {
+  background: $secondary-color;
+  padding: 10px 20px;
+  margin: 5px auto;
+  text-transform: uppercase;
+  border: 2px solid $secondary-color;
+  border-radius: 25px;
+  color: $tertiary-color;
+  text-align: center;
+  font-weight: bold;
+
+  &:hover {
+    color: $secondary-color;
+    background: $tertiary-color;
   }
 }
