@@ -17,6 +17,14 @@ export class DataService {
       },
       {
         'id': 2,
+        'name': 'Papramaki',
+        'description': "Android application built during my Software Development class that tracks users' spending habits. I played the role of project manager leading our team to deliver functionalities beyond the initial expectations for the project. I also built the Ruby on Rails API consumed by the Android app.",
+        'tags': [
+          'Android', 'Java', 'Ruby on Rails'
+        ]
+      },
+      {
+        'id': 3,
         'name': 'BlindSight',
         'description': "Project for Intel Singapore Invent 50 Competition, where our team built glasses that use Intel's Real Sense Camera to help people who are visually impaired make sense of their environment. I implemented text reading and object recognition features in C++. We were chosen as finalists at the competition.",
         'tags': [
@@ -24,7 +32,7 @@ export class DataService {
         ]
       },
       {
-        'id': 3,
+        'id': 4,
         'name': 'S.O.P.H.I.E.',
         'description': 'S.O.P.H.I.E. is an underwater robot I built with 2 other Macalester students for our AI Robotics class. It has a Raspberry Pi as its "brain" and it can be controlled using an API built using Python. S.O.P.H.I.E. is now part of the Macalester robotics lab, where other students can do future work on improving it.',
         'tags': [
