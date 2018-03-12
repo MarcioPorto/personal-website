@@ -48,7 +48,8 @@ export class DataService {
       {
         'id': 1,
         'name': 'Deep Learning Foundations Nanodegree',
-        'description': 'In this nanodegree, I built a neural network from scratch as well as more advanced models with convolutional, generative adversarial and recurrent neural networks using TensorFlow.',
+        'url': 'https://www.udacity.com/course/deep-learning-nanodegree--nd101',
+        'description': 'In this nanodegree, I built a neural network from scratch as well as more advanced models with convolutional, generative adversarial and recurrent neural networks using TensorFlow. Check out my GitHub profile for more details.',
         'tags': [
           'Udacity'
         ]
@@ -56,6 +57,7 @@ export class DataService {
       {
         'id': 2,
         'name': 'Machine Learning Engineer Nanodegree',
+        'url': 'https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t',
         'description': 'Currently working on this nanodegree. Stay tuned for updates.',
         'tags': [
           'Udacity'
