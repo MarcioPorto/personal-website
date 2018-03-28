@@ -74,7 +74,7 @@ export class DataService {
         'githubLink': '',
         'displayOnHome': false,
         'tags': [
-          'Solidity', 'Truffle'
+          'Smart Contract', 'Solidity', 'Truffle'
         ]
       },
       {
@@ -84,7 +84,7 @@ export class DataService {
         'githubLink': '',
         'displayOnHome': false,
         'tags': [
-          'Solidity', 'Truffle'
+          'Smart Contract', 'Solidity', 'Truffle'
         ]
       },
       {
@@ -94,7 +94,7 @@ export class DataService {
         'githubLink': '',
         'displayOnHome': true,
         'tags': [
-          'Solidity', 'Truffle'
+          'Smart Contract', 'Solidity', 'Truffle'
         ]
       },
       {
