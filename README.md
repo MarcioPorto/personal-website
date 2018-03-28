@@ -17,6 +17,8 @@ angular-cli-ghpages
 
 Then change GH settings.
 
-## Issues to fix
+## TODO
 
-- Project redirect from projects page reloading the page.
+- Fix project redirect from projects page reloading the page.
+- Add dates for projects
+- Add filtering for projects
