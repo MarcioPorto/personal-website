@@ -17,6 +17,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this._data.projects.subscribe(res => this.allProjects = res);
+    this.allProjects.reverse();
   }
 
   navigateHome() {

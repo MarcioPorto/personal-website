@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
         this.visibleProjects.push(project);
       }
     }
+    this.visibleProjects.reverse();
 
     this._data.courses.subscribe(res => this.allCourses = res);
     this.visibleCourses = this.allCourses;
