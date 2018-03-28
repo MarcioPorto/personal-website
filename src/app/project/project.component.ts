@@ -33,4 +33,8 @@ export class ProjectComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  navigateToAllProjects() {
+    this.router.navigate(['projects']);
+  }
+
 }

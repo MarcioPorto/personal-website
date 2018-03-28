@@ -1,9 +1,26 @@
 <h1>
-  Coming soon!
+  {{ project.name }}
 </h1>
 
+<hr>
+
 <div class="row">
-  <div class="col-xs-12 text-center">
-    <a href="" (click)="navigateHome()" class="btn">Back</a>
+  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+    <p>{{ project.description }}</p>
+    <div class="tags">
+      <span class="tag" *ngFor="let tag of project.tags">
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+  <div class="text-center">
+    <a href="" (click)="navigateHome()" class="btn">Home</a>
+    <a href="" (click)="navigateToAllProjects()" class="btn">All Projects</a>
   </div>
 </div>
