@@ -16,3 +16,7 @@ angular-cli-ghpages
 ```
 
 Then change GH settings.
+
+## Issues to fix
+
+- Project redirect from projects page reloading the page.
