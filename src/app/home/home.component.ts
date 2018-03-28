@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this._data.projects.subscribe(res => this.allProjects = res);
-    this.visibleProjects = this.allProjects;
+    this.visibleProjects = this.allProjects.slice(0, 3);
 
     this._data.courses.subscribe(res => this.allCourses = res);
     this.visibleCourses = this.allCourses;
