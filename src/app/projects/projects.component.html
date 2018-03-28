@@ -1,6 +1,20 @@
 <h1>
-  Coming soon!
+  Projects
 </h1>
+
+<hr>
+
+<div class="row">
+  <div class="project col-md-4 col-sm-6 col-xs-12" *ngFor="let project of allProjects">
+    <a routerLink="project/{{ project.id }}">{{ project.name }}</a>
+    <p>{{ project.description }}</p>
+    <div class="tags">
+      <span class="tag" *ngFor="let tag of project.tags">
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+</div>
   
 <div class="row">
   <div class="col-xs-12 text-center">
